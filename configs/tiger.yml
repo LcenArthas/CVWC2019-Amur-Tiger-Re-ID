@@ -1,0 +1,137 @@
+MODEL:
+
+  #-------------------------------V1-V2版本-------------------------------------
+#  NAME: 'resnet50'
+#  BODYNAME: 'resnet18'
+#  PRETRAIN_PATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/resnet50-19c8e357.pth'
+#  PRETRAIN_BODYPATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/resnet18-5c106cde.pth'
+
+  #-------------------------------V3-V4版本-------------------------------------
+#  NAME: 'resnet101'
+#  BODYNAME: 'resnet34'
+#  PRETRAIN_PATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/resnet101-5d3b4d8f.pth'
+#  PRETRAIN_BODYPATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/resnet34-333f7ec4.pth'
+
+  #------------------------------V8-----------------------------------------------
+#  NAME: 'se_resnet101'
+#  BODYNAME: 'resnet34'
+#  PRETRAIN_PATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/se_resnet101-7e38fcc6.pth'
+#  PRETRAIN_BODYPATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/resnet34-333f7ec4.pth'
+
+  #------------------------------V9------------------------------------------------
+#  NAME: 'se_resnet50'
+#  BODYNAME: 'resnet34'
+#  PRETRAIN_PATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/se_resnet50-ce0d4300.pth'
+#  PRETRAIN_BODYPATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/resnet34-333f7ec4.pth'
+
+  #------------------------------V10------------------------------------------------
+#  NAME: 'resnet152'
+#  BODYNAME: 'resnet34'
+#  PRETRAIN_PATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/resnet152-b121ed2d.pth'
+#  PRETRAIN_BODYPATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/resnet34-333f7ec4.pth'
+
+  #------------------------------V11------------------------------------------------
+#  NAME: 'resnet50-bsize'
+#  BODYNAME: 'resnet18-bsize'
+#  PRETRAIN_PATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/resnet50-19c8e357.pth'
+#  PRETRAIN_BODYPATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/resnet18-5c106cde.pth'
+
+  #------------------------------V13------------------------------------------------
+#  NAME: 'resnet101-bsize'
+#  BODYNAME: 'resnet34-bsize'
+#  PRETRAIN_PATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/resnet101-5d3b4d8f.pth'
+#  PRETRAIN_BODYPATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/resnet34-333f7ec4.pth'
+
+  #------------------------------V14------------------------------------------------
+#  NAME: 'se_resnet50-bsize'
+#  BODYNAME: 'resnet34-bsize'
+#  PRETRAIN_PATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/se_resnet50-ce0d4300.pth'
+#  PRETRAIN_BODYPATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/resnet34-333f7ec4.pth'
+
+#  #------------------------------V15------------------------------------------------
+  NAME: 'resnet152-bsize'
+  BODYNAME: 'resnet34-bsize'
+  PRETRAIN_PATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/resnet152-b121ed2d.pth'
+  PRETRAIN_BODYPATH: '/home/liucen/project/reid-strong-baseline/pretrained_model/resnet34-333f7ec4.pth'
+
+
+  PRETRAIN_CHOICE: 'imagenet'
+  LAST_STRIDE: 1
+  NECK: 'bnneck'
+  METRIC_LOSS_TYPE: 'triplet'
+  IF_LABELSMOOTH: 'on'
+  IF_WITH_CENTER: 'no'
+
+PART:
+  SIZE_BODY: [64, 128]
+  SIZE_PAW: [64, 64]
+
+INPUT:
+  #------------------------------V11之前------------------------------------------------------------
+#  SIZE_TRAIN: [128, 256]
+#  SIZE_TEST: [128, 256]
+  #------------------------------V11-V13-----------------------------------------------------------
+  SIZE_TRAIN: [256, 512]
+  SIZE_TEST: [256, 512]
+
+  PROB: 0.0                      # random horizontal flip
+  RE_PROB: 0.0                   # random erasing
+  RO_DEGREE: 10
+  BRIGHT_PROB: 0.2
+  SATURA_PROB: 0.2
+  CONTRAST_PROB: 0.2
+  HUE_PROB: 0.2
+  PADDING: 10
+
+DATASETS:
+  NAMES: ['amurtiger']
+
+DATALOADER:
+  SAMPLER: 'softmax_triplet'
+  NUM_INSTANCE: 4
+  NUM_WORKERS: 8
+
+SOLVER:
+  OPTIMIZER_NAME: 'Adam'
+  MAX_EPOCHS: 550
+  BASE_LR: 0.00025
+
+  CLUSTER_MARGIN: 0.3
+
+  CENTER_LR: 0.5
+  CENTER_LOSS_WEIGHT: 0.0005
+
+  RANGE_K: 2
+  RANGE_MARGIN: 0.3
+  RANGE_ALPHA: 0
+  RANGE_BETA: 1
+  RANGE_LOSS_WEIGHT: 1
+
+  BIAS_LR_FACTOR: 1
+  WEIGHT_DECAY: 0.0005
+  WEIGHT_DECAY_BIAS: 0.0005
+  IMS_PER_BATCH: 12                            #batch
+
+  STEPS: [40, 80, 120, 160, 240, 320, 400]   #v1,v2,v3老版本
+#  STEPS: [40, 80, 320]
+#  STEPS: [40]
+  GAMMA: 0.5
+
+  WARMUP_FACTOR: 0.01
+  WARMUP_ITERS: 25
+  WARMUP_METHOD: 'linear'
+
+  CHECKPOINT_PERIOD: 50
+  LOG_PERIOD: 10
+  EVAL_PERIOD: 10
+
+TEST:
+  IMS_PER_BATCH: 2                 #128
+  RE_RANKING: 'no'
+  WEIGHT:    "path"
+  NECK_FEAT: 'after'
+  FEAT_NORM: 'yes'
+
+OUTPUT_DIR: "/home/liucen/project/reid-strong-baseline/tiger_output/"
+
+
