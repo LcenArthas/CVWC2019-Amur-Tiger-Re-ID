@@ -66,7 +66,7 @@ mkdir trained_weight
 
 Unzip the model.zip and put them into the `{repo_root}/trained_weight/`.
 
-And make sure the repo files as the following structure:
+**And make sure the repo files as the following structure:**
   ```
   {repo_root}
   ├── config
@@ -103,3 +103,15 @@ And make sure the repo files as the following structure:
       
   ```
   
+#### Inference Now!
+
+```
+python demo.py
+```
+
+This process will take about 15 minutes, just a moment, please. 
+
+Run this scrip will generate 1 files in the {repo_root/}:
+
+- **submission.json** — you can submit in the Tiger Plain Re-ID track (0.45988 mAP in the Public Leaderboard).
+
