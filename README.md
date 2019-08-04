@@ -8,7 +8,7 @@ This code is mainly for the **Tiger Re-ID in the plain track** and **Tiger Re-ID
 ```
 git clone https://github.com/LcenArthas/CWCV2019-Amur-Tiger-Re-ID.git
 ```
-#### Dependencies
+### Dependencies
 
 Tested under python3.6  Ubantu16.04
 
@@ -30,3 +30,55 @@ Tested under python3.6  Ubantu16.04
   - tqdm==4.32.1
   - yacs==0.1.6
 
+## Section1  The Tiger Plain Re-ID:
+
+### Train
+
+**TO DO...**
+
+### Inference
+
+#### Data Preparation
+
+Creat a new folder named `/test/` under the {repo_root}:
+
+```
+mkdir test
+```
+
+Put the test images in the `{repo_root}/test/` folder under the repo.
+
+#### Download Pretrained Model
+
+I use Faster-rcnn-Resnet50-FPN to train my model.
+
+ - [Trained weight](https://pan.baidu.com/s/1q5Wdzcq6aKtM1H_VugCe3w)
+
+Download it and create a new folder under the {repo_root} named `/trained_weight/`
+
+```
+mkdir trained_weight
+```
+
+Put the trained weight into the `{repo_root}/trained_weight/`.
+
+And make sure the repo files as the following structure:
+  ```
+  {repo_root}
+  ├── configs
+  ├── demo
+  ├── lib
+  ├── test
+  |   ├── 0001.jpg
+  │   ├── 0002.jpg
+  │   ├── 0003.jpg
+  │   ├── 0004.jpg
+  │   ├── 0005.jpg
+  │   ├── ...
+  ├── tools
+  ├── trained_weight
+  │   ├── best_model.pth
+  └── make_coco_data.py
+      
+  ```
+  
