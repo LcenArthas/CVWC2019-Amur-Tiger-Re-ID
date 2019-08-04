@@ -69,20 +69,37 @@ Unzip the model.zip and put them into the `{repo_root}/trained_weight/`.
 And make sure the repo files as the following structure:
   ```
   {repo_root}
+  ├── config
   ├── configs
-  ├── demo
-  ├── lib
-  ├── test
-  |   ├── 0001.jpg
-  │   ├── 0002.jpg
-  │   ├── 0003.jpg
-  │   ├── 0004.jpg
-  │   ├── 0005.jpg
+  ├── data
+  |   ├── AmurTiger
+  │   │   └── reid_test
+  │   │       ├── 000000.jpg
+  │   │       ├── 000004.jpg
+  │   │       ├── 000005.jpg
+  │   │       ├── 000006.jpg
+  │   │       ├── 000008.jpg
+  │   │       ├── ...
+  │   ├── datasets
+  │   ├── samplers
   │   ├── ...
-  ├── tools
+  ├── engine
+  ├── layers
+  ├── modeling
+  ├── solver
+  ├── tests
   ├── trained_weight
   │   ├── best_model.pth
-  └── make_coco_data.py
+  │   │       ├── 000005.jpg
+  │   │       ├── 000006.jpg
+  │   │       ├── 000008.jpg
+  │   │       ├── ...
+  ├── utils
+  ├── check_result.py
+  ├── medo.py
+  ├── medo_wide.py
+  ├── test.py
+  └── train.py
       
   ```
   
