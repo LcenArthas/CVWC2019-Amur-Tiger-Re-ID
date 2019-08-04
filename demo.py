@@ -141,6 +141,6 @@ if __name__ == '__main__':
         r['ans_ids'] = ans_id
         result.append(r)
 
-    with open('submition.json', 'w') as f:
+    with open('submition_plain.json', 'w') as f:
         json.dump(result, f)
 
