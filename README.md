@@ -34,7 +34,7 @@ Tested under python3.6  Ubantu16.04
 
 ### Train
 
-**TO DO...**
+TO DO...
 
 ### Inference
 
@@ -52,7 +52,7 @@ Put the test images in the `{repo_root}/data/AmurTiger/reid_test/`.
 
 #### Download Pretrained Model
 
-The trained weight is following:
+The trained weights are following:
 
  - [Trained weight](https://pan.baidu.com/s/1q5Wdzcq6aKtM1H_VugCe3w)
 
@@ -62,7 +62,7 @@ Download it and create a new folder under the {repo_root} named `/trained_weight
 mkdir trained_weight
 ```
 
-Unzip the model.zip(there will be 8 trained weight) and put them into the `{repo_root}/trained_weight/`.
+Unzip the model.zip(there will be 8 trained weight) and put them in the `{repo_root}/trained_weight/`.
 
 **And make sure the repo files as the following structure:**
 
@@ -109,18 +109,19 @@ Unzip the model.zip(there will be 8 trained weight) and put them into the `{repo
 python demo.py
 ```
 
-This process will take about 15 minutes, just a moment, please. 
+This process will take about 6 minutes, just a moment, please. 
 
-Run this scrip will generate 1 files in the {repo_root/}:
+It will generate a submission in the {repo_root/}:
 
-- **submission_plain.json** — you can submit in the Tiger Plain Re-ID track (0.45988 mAP in the Public Leaderboard).
+- **submission_plain.json** —-you can submit to the Tiger Plain Re-ID track.
+
 
 
 ## Section2  The Tiger Wild Re-ID:
 
 ### Train
 
-**TO DO...**
+TO DO...
 
 ### Inference
 
@@ -130,7 +131,7 @@ Run this scrip will generate 1 files in the {repo_root/}:
 
 Please follow this repo: [CWCV2019-Amur-Tiger-Detection](https://github.com/LcenArthas/CWCV2019-Amur-Tiger-Detection)
 
-Run that scrip will generate 3 files in the {repo_root/}:
+Run scrip in above repo will generate 3 files in the {repo_root/}:
 
 - **det_submission.json** 
 
@@ -142,13 +143,13 @@ This **wide_box.json** and **reid_test(a folder)** are what we need following.
 
 #### Re-ID
 
-Use the reop.
+Use this reop.
 
 ##### Data Preparation
 
-Put **wide_box.json** and **reid_test(a folder)**(created by the detector above) in the `{repo_root}/data/AmurTiger/reid_test/`.
+Put **wide_box.json** and **reid_test(a folder)**(created by the detector above) under the `{repo_root}/data/AmurTiger/`.
 
-##### Download Pretrained Model(Same as plain re-id)
+##### Download Pretrained Model(Same as the plain re-id)
 
 The trained weight is following:
 
@@ -211,7 +212,7 @@ python demo_wide.py
 
 This process will take about 15 minutes, just a moment, please. 
 
-Run this scrip will generate 1 files in the {repo_root/}:
+It will generate a submission in the {repo_root/}:
 
-- **submission_wide.json** — you can submit in the Tiger Wide Re-ID track (0.45988 mAP in the Public Leaderboard).
+- **submission_wide.json** —-you can submit to the Tiger Wide Re-ID track.
 
