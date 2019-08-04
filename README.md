@@ -123,7 +123,11 @@ Run this scrip will generate 1 files in the {repo_root/}:
 
 ### Inference
 
-****
+**In this task, it's a two-step process: Detection and Re-id**
+
+#### Detection
+
+Please follow this repo: [CWCV2019-Amur-Tiger-Detection](https://github.com/LcenArthas/CWCV2019-Amur-Tiger-Detection)
 
 #### Data Preparation
 
