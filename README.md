@@ -79,10 +79,10 @@ And make sure the repo files as the following structure:
   │   │       ├── 000005.jpg
   │   │       ├── 000006.jpg
   │   │       ├── 000008.jpg
-  │   │       ├── ...
+  │   │       └── ...
   │   ├── datasets
   │   ├── samplers
-  │   ├── ...
+  │   └── ...
   ├── engine
   ├── layers
   ├── modeling
@@ -93,7 +93,7 @@ And make sure the repo files as the following structure:
   │   │       ├── 000005.jpg
   │   │       ├── 000006.jpg
   │   │       ├── 000008.jpg
-  │   │       ├── ...
+  │   └──     └── ...
   ├── utils
   ├── check_result.py
   ├── medo.py
