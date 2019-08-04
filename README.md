@@ -50,7 +50,7 @@ cd AmurTiger
 mkdir reid_test
 ```
 
-Put the test images in the `{repo_root}/test/` folder under the repo.
+Put the test images in the `{repo_root}/data/AmurTiger/reid_test/`.
 
 #### Download Pretrained Model
 
