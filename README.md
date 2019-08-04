@@ -139,20 +139,15 @@ Run that scrip will generate 3 files in the {repo_root/}:
 
 This **wide_box.json** and **reid_test(a folder)** are what we need following.
 
+#### Re-ID
 
-#### Data Preparation
+Use the reop.
 
-Creat a new folder named `/reid_test/` under the `{repo_root}/data/AmurTiger/`:
+##### Data Preparation
 
-```
-cd data
-cd AmurTiger
-mkdir reid_test
-```
+Put **wide_box.json** and **reid_test(a folder)**(created by the detector above) in the `{repo_root}/data/AmurTiger/reid_test/`.
 
-Put the test images in the `{repo_root}/data/AmurTiger/reid_test/`.
-
-#### Download Pretrained Model
+#### Download Pretrained Model(same as plain re-id)
 
 The trained weight is following:
 
@@ -174,6 +169,7 @@ Unzip the model.zip and put them into the `{repo_root}/trained_weight/`.
   ├── data
   |   ├── AmurTiger
   │   │   ├── flod0
+  │   │   ├── wide_box.json
   │   │   └── reid_test
   │   │       ├── 000000.jpg
   │   │       ├── 000004.jpg
@@ -207,7 +203,7 @@ Unzip the model.zip and put them into the `{repo_root}/trained_weight/`.
 #### Inference Now!
 
 ```
-python demo.py
+python demo_wide.py
 ```
 
 This process will take about 15 minutes, just a moment, please. 
