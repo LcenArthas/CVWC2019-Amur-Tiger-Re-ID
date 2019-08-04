@@ -54,7 +54,7 @@ Put the test images in the `{repo_root}/data/AmurTiger/reid_test/`.
 
 #### Download Pretrained Model
 
-I use Faster-rcnn-Resnet50-FPN to train my model.
+The trained weight is following:
 
  - [Trained weight](https://pan.baidu.com/s/1q5Wdzcq6aKtM1H_VugCe3w)
 
