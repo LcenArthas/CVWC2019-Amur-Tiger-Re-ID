@@ -119,7 +119,7 @@ if __name__ == '__main__':
     PATHS = eval_func(distmat=mat, q_paths=q_path, g_paths=g_path, max_rank= pic_num, is_demo=True)
 
     print('#'*100)
-    print('开始制作结果.....')
+    print('MAKING SUBMISSION.....')
     result = []
     for row in PATHS:
         r = {}
@@ -136,5 +136,5 @@ if __name__ == '__main__':
     result1 = {'bboxs': box,
               'reid_result': result}
 
-    with open('submition.json', 'w') as f:
+    with open('submition_wide.json', 'w') as f:
         json.dump(result1, f)
