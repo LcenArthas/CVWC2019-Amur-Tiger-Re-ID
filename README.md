@@ -40,12 +40,10 @@ Tested under python3.6  Ubantu16.04
 
 #### Data Preparation
 
-Creat a new folder named `/AmurTiger/` under the `{repo_root}/data/`:
+Creat a new folder named `/reid_test/` under the `{repo_root}/data/AmurTiger/`:
 
-Then creat another new folder named `/reid_test/` under `{repo_root}/data/AmurTiger/`
 ```
 cd data
-mkdir AmurTiger
 cd AmurTiger
 mkdir reid_test
 ```
@@ -73,6 +71,7 @@ Unzip the model.zip and put them into the `{repo_root}/trained_weight/`.
   ├── configs
   ├── data
   |   ├── AmurTiger
+  │   │   ├── flod0
   │   │   └── reid_test
   │   │       ├── 000000.jpg
   │   │       ├── 000004.jpg
