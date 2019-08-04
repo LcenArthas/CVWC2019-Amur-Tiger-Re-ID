@@ -40,10 +40,14 @@ Tested under python3.6  Ubantu16.04
 
 #### Data Preparation
 
-Creat a new folder named `/test/` under the {repo_root}:
+Creat a new folder named `/AmurTiger/` under the `{repo_root}/data/`:
 
+Then creat another new folder named `/reid_test/` under `{repo_root}/data/AmurTiger/`
 ```
-mkdir test
+cd data
+mkdir AmurTiger
+cd AmurTiger
+mkdir reid_test
 ```
 
 Put the test images in the `{repo_root}/test/` folder under the repo.
