@@ -1,5 +1,13 @@
 # CWCV2019-Amur-Tiger-Re-ID
 
+<div align="center">
+
+<img src="data/AmurTiger/flod0/Pseudo_Mask_filp/273_c6s6_1882.body.jpg" width="700px"/>
+
+<p> Example result of Rank-10 .</p>
+
+</div>
+
 This code is mainly for the **Tiger Re-ID in the plain track** and **Tiger Re-ID in the wild track**[CVWC2019](https://cvwc2019.github.io/challenge.html) @ICCV19 Workshop.
 
 ## Getting Started
