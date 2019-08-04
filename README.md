@@ -129,6 +129,17 @@ Run this scrip will generate 1 files in the {repo_root/}:
 
 Please follow this repo: [CWCV2019-Amur-Tiger-Detection](https://github.com/LcenArthas/CWCV2019-Amur-Tiger-Detection)
 
+Run that scrip will generate 3 files in the {repo_root/}:
+
+- **det_submission.json** 
+
+- **wide_box.json** 
+
+- **reid_test(a folder)** --it contains images that have been detected and croped.
+
+This **wide_box.json** and **reid_test(a folder)** are what we need following.
+
+
 #### Data Preparation
 
 Creat a new folder named `/reid_test/` under the `{repo_root}/data/AmurTiger/`:
