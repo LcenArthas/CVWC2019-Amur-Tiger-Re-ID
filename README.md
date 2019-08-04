@@ -62,10 +62,11 @@ Download it and create a new folder under the {repo_root} named `/trained_weight
 mkdir trained_weight
 ```
 
-Unzip the model.zip and put them into the `{repo_root}/trained_weight/`.
+Unzip the model.zip(there will be 8 trained weight) and put them into the `{repo_root}/trained_weight/`.
 
 **And make sure the repo files as the following structure:**
-  ```
+
+```
   {repo_root}
   ├── config
   ├── configs
@@ -88,11 +89,11 @@ Unzip the model.zip and put them into the `{repo_root}/trained_weight/`.
   ├── solver
   ├── tests
   ├── trained_weight
-  │   ├── best_model.pth
-  │   │       ├── 000005.jpg
-  │   │       ├── 000006.jpg
-  │   │       ├── 000008.jpg
-  │   └──     └── ...
+  │   ├── resnet101-bsize_model_100.pth
+  │   ├── resnet101-bsize_model_300.pth       
+  │   ├── resnet101-bsize_model_301.pth
+  │   ├── resnet101-bsize_model_400.pth
+  │   └──...
   ├── utils
   ├── check_result.py
   ├── medo.py
@@ -112,7 +113,7 @@ This process will take about 15 minutes, just a moment, please.
 
 Run this scrip will generate 1 files in the {repo_root/}:
 
-- **submission.json** — you can submit in the Tiger Plain Re-ID track (0.45988 mAP in the Public Leaderboard).
+- **submission_plain.json** — you can submit in the Tiger Plain Re-ID track (0.45988 mAP in the Public Leaderboard).
 
 
 ## Section2  The Tiger Wild Re-ID:
@@ -147,7 +148,7 @@ Use the reop.
 
 Put **wide_box.json** and **reid_test(a folder)**(created by the detector above) in the `{repo_root}/data/AmurTiger/reid_test/`.
 
-#### Download Pretrained Model(same as plain re-id)
+##### Download Pretrained Model(Same as plain re-id)
 
 The trained weight is following:
 
@@ -162,7 +163,8 @@ mkdir trained_weight
 Unzip the model.zip and put them into the `{repo_root}/trained_weight/`.
 
 **And make sure the repo files as the following structure:**
-  ```
+ 
+ ```
   {repo_root}
   ├── config
   ├── configs
@@ -187,10 +189,11 @@ Unzip the model.zip and put them into the `{repo_root}/trained_weight/`.
   ├── tests
   ├── trained_weight
   │   ├── best_model.pth
-  │   │       ├── 000005.jpg
-  │   │       ├── 000006.jpg
-  │   │       ├── 000008.jpg
-  │   └──     └── ...
+  │   ├── resnet101-bsize_model_100.pth
+  │   ├── resnet101-bsize_model_300.pth       
+  │   ├── resnet101-bsize_model_301.pth
+  │   ├── resnet101-bsize_model_400.pth
+  │   └──...
   ├── utils
   ├── check_result.py
   ├── medo.py
@@ -200,7 +203,7 @@ Unzip the model.zip and put them into the `{repo_root}/trained_weight/`.
       
   ```
   
-#### Inference Now!
+##### Inference Now!
 
 ```
 python demo_wide.py
@@ -210,5 +213,5 @@ This process will take about 15 minutes, just a moment, please.
 
 Run this scrip will generate 1 files in the {repo_root/}:
 
-- **submission.json** — you can submit in the Tiger Plain Re-ID track (0.45988 mAP in the Public Leaderboard).
+- **submission_wide.json** — you can submit in the Tiger Wide Re-ID track (0.45988 mAP in the Public Leaderboard).
 
