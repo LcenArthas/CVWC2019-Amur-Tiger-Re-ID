@@ -139,6 +139,8 @@ TO DO...
 
 Please follow this repo: [CWCV2019-Amur-Tiger-Detection](https://github.com/LcenArthas/CWCV2019-Amur-Tiger-Detection)
 
+Note that the two repo depend on different environments(Re-ID is pytorch==1.0.1, Detection is pytorch==0.4.1)
+
 Run scrip in above repo will generate 3 files in the {repo_root/}:
 
 - **det_submission.json** 
