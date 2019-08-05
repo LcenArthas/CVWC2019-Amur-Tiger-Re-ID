@@ -2,7 +2,7 @@
 
 <div align="center">
 
-<img src="data/AmurTiger/flod0/Pseudo_Mask_filp/273_c6s6_1882.body.jpg" width="700px"/>
+<img src="data/AmurTiger/flod0/Pseudo_Mask_filp/273_c6s6_1882.body.jpg" width="900px"/>
 
 <p> Example result of Rank-10 .</p>
 
