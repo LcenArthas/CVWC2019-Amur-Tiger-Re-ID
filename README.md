@@ -8,7 +8,7 @@
 
 </div>
 
-This code is mainly for the **Tiger Re-ID in the plain track** and **Tiger Re-ID in the wild track**[CVWC2019](https://cvwc2019.github.io/challenge.html) @ICCV19 Workshop.
+This code is for the **Tiger Re-ID in the plain track** and **Tiger Re-ID in the wild track**[CVWC2019](https://cvwc2019.github.io/challenge.html) @ICCV19 Workshop.
 
 ## Getting Started
 ### Clone the repo:
