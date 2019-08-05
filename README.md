@@ -62,7 +62,7 @@ Put the test images in the `{repo_root}/data/AmurTiger/reid_test/`.
 
 The trained weights are following:
 
- - [Trained weight](https://pan.baidu.com/s/1q5Wdzcq6aKtM1H_VugCe3w)
+ - [Trained weight](https://pan.baidu.com/s/1c9kJXWLN-g-GHSAz5EHpzQ)
 
 Download it and create a new folder under the {repo_root} named `/trained_weight/`
 
@@ -163,7 +163,7 @@ Put **wide_box.json** and **reid_test(a folder)**(created by the detector above)
 
 The trained weight is following:
 
- - [Trained weight](https://pan.baidu.com/s/1q5Wdzcq6aKtM1H_VugCe3w)
+ - [Trained weight](https://pan.baidu.com/s/1c9kJXWLN-g-GHSAz5EHpzQ)
 
 Download it and create a new folder under the {repo_root} named `/trained_weight/`
 
