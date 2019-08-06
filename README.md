@@ -70,7 +70,7 @@ Download it and create a new folder under the {repo_root} named `/trained_weight
 mkdir trained_weight
 ```
 
-Unzip the model.zip(there will be 8 trained weight) and put them in the `{repo_root}/trained_weight/`.
+Unzip the model.zip(there will be 8 trained weights) and put them in the `{repo_root}/trained_weight/`.
 
 **And make sure the repo files as the following structure:**
 
@@ -139,7 +139,7 @@ TO DO...
 
 Please follow this repo: [CWCV2019-Amur-Tiger-Detection](https://github.com/LcenArthas/CWCV2019-Amur-Tiger-Detection)
 
-Note that the two repo depend on different environments(Re-ID is pytorch==1.0.1, Detection is pytorch==0.4.1)
+Note that the two repos depend on different environments(Re-ID is pytorch==1.0.1, Detection is pytorch==0.4.1)
 
 Run scrip in above repo will generate 3 files in the {repo_root/}:
 
@@ -149,7 +149,7 @@ Run scrip in above repo will generate 3 files in the {repo_root/}:
 
 - **reid_test(a folder)** --it contains images that have been detected and croped.
 
-This **wide_box.json** and **reid_test(a folder)** are what we need following.
+This **wide_box.json** and **reid_test(a folder)** are what we need next.
 
 #### Re-ID
 
