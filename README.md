@@ -1,4 +1,4 @@
-# CWCV2019-Amur-Tiger-Re-ID
+# CVWC2019-Amur-Tiger-Re-ID
 
 <div align="center">
 
