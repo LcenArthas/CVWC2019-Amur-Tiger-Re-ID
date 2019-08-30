@@ -48,9 +48,10 @@ Tested under python3.6  Ubantu16.04
 :point_right: Section1  The Tiger Plain Re-ID:
 --------
 
-### Train
+## :running: Train
 
-TO DO...
+### :one: Data Prearation
+
 
 ### Inference
 
