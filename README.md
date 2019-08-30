@@ -43,7 +43,10 @@ Tested under python3.6  Ubantu16.04
   - tqdm==4.32.1
   - yacs==0.1.6
 
-## Section1  The Tiger Plain Re-ID:
+---------
+
+:point_right: Section1  The Tiger Plain Re-ID:
+--------
 
 ### Train
 
