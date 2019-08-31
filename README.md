@@ -56,6 +56,41 @@ Tested under python3.6  Ubantu16.04
 
 :small_orange_diamond: Download the train dataset and put them(atrw_reid_train, atrw_anno_reid_train) into the `{repo_root}/process_data/`. 
 
+:small_orange_diamond: Transform the data style for the model
+
+```
+python data_process.py
+```
+
+### :two: Pre-trained weight
+
+:small_orange_diamond: Creat a new folder named `/pretrained_model/` under the `{repo_root}/`:
+
+```
+cd data
+mkdir pretrained_model
+```
+
+:small_orange_diamond: Download the pre-trained weighte and put them into the `{repo_root}/pretrained_model/`. 
+
+- [ResNet50](https://pan.baidu.com/s/1iUsMA0k6cHYvTYbqsMSzoQ)
+
+- [ResNet101](https://pan.baidu.com/s/1g-0MRS0IYNi2yhlWXZUmAw)
+
+- [ResNet18](https://pan.baidu.com/s/1aC-ZgxW1UVYLDUlyY6QZCQ)
+
+- [ResNet34](https://pan.baidu.com/s/1YY0IPHF3tBqW4tQ54ZuXgA)
+
+- [ResNet152](https://pan.baidu.com/s/1hrGAWHcqb7XzYbm-T7WARg)
+
+- [SEResNet50](https://pan.baidu.com/s/1Jd4CA7M1IIZwnRWLTctNMw)
+
+- [SEResNet101](https://pan.baidu.com/s/1TsOD_b9gJra-pt6RNIyuUA)
+
+
+
+
+
 ### Inference
 
 #### Data Preparation
