@@ -87,9 +87,64 @@ mkdir pretrained_model
 
 - [SEResNet101](https://pan.baidu.com/s/1TsOD_b9gJra-pt6RNIyuUA)
 
+- [ResNeXt50](https://pan.baidu.com/s/1J03mTHFv9ElB4Jp7pDiQFA)
+
+- [ResNeXt101](https://pan.baidu.com/s/1nAzGsuSTXfcPOSAZfyWsbw)
+
+- [SEResNeXt50](https://pan.baidu.com/s/1tpWgtHd4WWiwbfU97lmg7g)
+
+- [SEResNeXt101](https://pan.baidu.com/s/10khP6x1o5VQtQeXtFhomLA)
+
+**And make sure the repo files as the following structure:**
+ 
+ ```
+ {repo_root}
+  ├── config
+  ├── configs
+  ├── data
+  |   ├── AmurTiger
+  │   │   ├── flod0
+  │   │   └── reid_test
+  │   │       ├── 000000.jpg
+  │   │       ├── 000004.jpg
+  │   │       ├── 000005.jpg
+  │   │       ├── 000006.jpg
+  │   │       ├── 000008.jpg
+  │   │       └── ...
+  │   ├── datasets
+  │   ├── samplers
+  │   └── ...
+  ├── engine
+  ├── layers
+  ├── modeling
+  ├── solver
+  ├── tests
+  ├── trained_weight
+  │   ├── resnet101-bsize_model_100.pth
+  │   ├── resnet101-bsize_model_300.pth       
+  │   ├── resnet101-bsize_model_301.pth
+  │   ├── resnet101-bsize_model_400.pth
+  │   └──...
+  ├── utils
+  ├── check_result.py
+  ├── medo.py
+  ├── medo_wide.py
+  ├── test.py
+  └── train.py
+```     
+  
+:clap: Train Now!
+--------
+
+```
+cd tools
+python train_net_step.py
+```
+
+Eventually the trained model will be saved in `{repo_root}/tools/Outputs/`
 
 
-
+-------
 
 ### Inference
 
