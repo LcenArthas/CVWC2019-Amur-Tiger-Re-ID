@@ -1,0 +1,82 @@
+MODEL:
+
+  #------------------------------V15------------------------------------------------
+  NAME: 'resnet152-bsize'
+  BODYNAME: 'resnet34-bsize'
+  PRETRAIN_PATH: './pretrained_model/resnet152-b121ed2d.pth'
+  PRETRAIN_BODYPATH: './pretrained_model/resnet34-333f7ec4.pth'
+
+  PRETRAIN_CHOICE: 'imagenet'
+  LAST_STRIDE: 1
+  NECK: 'bnneck'
+  METRIC_LOSS_TYPE: 'triplet'
+  IF_LABELSMOOTH: 'on'
+  IF_WITH_CENTER: 'no'
+
+PART:
+  SIZE_BODY: [64, 128]
+  SIZE_PAW: [64, 64]
+
+INPUT:
+  SIZE_TRAIN: [256, 512]
+  SIZE_TEST: [256, 512]
+
+  PROB: 0.0                      # random horizontal flip
+  RE_PROB: 0.0                   # random erasing
+  RO_DEGREE: 10
+  BRIGHT_PROB: 0.2
+  SATURA_PROB: 0.2
+  CONTRAST_PROB: 0.2
+  HUE_PROB: 0.2
+  PADDING: 10
+
+DATASETS:
+  NAMES: ['amurtiger']
+
+DATALOADER:
+  SAMPLER: 'softmax_triplet'
+  NUM_INSTANCE: 4
+  NUM_WORKERS: 8
+
+SOLVER:
+  OPTIMIZER_NAME: 'Adam'
+  MAX_EPOCHS: 550
+  BASE_LR: 0.00025
+
+  CLUSTER_MARGIN: 0.3
+
+  CENTER_LR: 0.5
+  CENTER_LOSS_WEIGHT: 0.0005
+
+  RANGE_K: 2
+  RANGE_MARGIN: 0.3
+  RANGE_ALPHA: 0
+  RANGE_BETA: 1
+  RANGE_LOSS_WEIGHT: 1
+
+  BIAS_LR_FACTOR: 1
+  WEIGHT_DECAY: 0.0005
+  WEIGHT_DECAY_BIAS: 0.0005
+  IMS_PER_BATCH: 8                            #batch
+
+  STEPS: [40, 80, 120, 160, 240, 320, 400]
+  GAMMA: 0.5
+
+  WARMUP_FACTOR: 0.01
+  WARMUP_ITERS: 25
+  WARMUP_METHOD: 'linear'
+
+  CHECKPOINT_PERIOD: 50
+  LOG_PERIOD: 10
+  EVAL_PERIOD: 10
+
+TEST:
+  IMS_PER_BATCH: 2                              #128
+  RE_RANKING: 'no'
+  WEIGHT:    "path"
+  NECK_FEAT: 'after'
+  FEAT_NORM: 'yes'
+
+OUTPUT_DIR: "./tiger_output/b_resnet152_34/"
+
+
