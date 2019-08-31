@@ -265,11 +265,11 @@ This **wide_box.json** and **reid_test(a folder)** are what we need next.
 
 Use this reop.
 
-#### 1.Data Preparation
+#### :small_orange_diamond: Data Preparation
 
 Put **wide_box.json** and **reid_test(a folder)**(created by the detector above) under the `{repo_root}/data/AmurTiger/`.
 
-##### 2.Download Pretrained Model(Same as the plain re-id)
+##### :small_orange_diamond: Download Pretrained Model(Same as the plain re-id)
 
 The trained weight is following:
 
