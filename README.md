@@ -52,6 +52,9 @@ Tested under python3.6  Ubantu16.04
 
 ### :one: Data Prearation
 
+- [Train Dataset](https://pan.baidu.com/s/1QDRDcR4D8M3mOjX0VKd3Vw)
+
+:small_orange_diamond: Download the train dataset and put them(atrw_reid_train, atrw_anno_reid_train) into the `{repo_root}/process_data/`. 
 
 ### Inference
 
