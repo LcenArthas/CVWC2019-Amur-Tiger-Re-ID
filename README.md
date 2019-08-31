@@ -73,8 +73,7 @@ mkdir pretrained_model
 
 :small_orange_diamond: Download the pre-trained weighte and put them into the `{repo_root}/pretrained_model/`. 
 
-- [ResNet50](https://pan.baidu.com/s/1iUsMA0k6cHYvTYbqsMSzoQ)
-- [ResNet101](https://pan.baidu.com/s/1g-0MRS0IYNi2yhlWXZUmAw)
+- [ResNet50](https://pan.baidu.com/s/1iUsMA0k6cHYvTYbqsMSzoQ) - [ResNet101](https://pan.baidu.com/s/1g-0MRS0IYNi2yhlWXZUmAw)
 
 - [ResNet18](https://pan.baidu.com/s/1aC-ZgxW1UVYLDUlyY6QZCQ)
 
