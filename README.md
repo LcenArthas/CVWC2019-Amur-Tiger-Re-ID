@@ -104,29 +104,22 @@ mkdir pretrained_model
   ├── data
   |   ├── AmurTiger
   │   │   ├── flod0
-  │   │   └── reid_test
-  │   │       ├── 000000.jpg
-  │   │       ├── 000004.jpg
-  │   │       ├── 000005.jpg
-  │   │       ├── 000006.jpg
-  │   │       ├── 000008.jpg
-  │   │       └── ...
-  │   ├── datasets
+  │   │   └── flod1
+  │   │   ├── flod2
+  │   │   └── flod3
+  │   ├── datasets
   │   ├── samplers
   │   └── ...
   ├── engine
   ├── layers
   ├── modeling
+  ├── pre_data
+  ├── pretrained_model
   ├── solver
   ├── tests
-  ├── trained_weight
-  │   ├── resnet101-bsize_model_100.pth
-  │   ├── resnet101-bsize_model_300.pth       
-  │   ├── resnet101-bsize_model_301.pth
-  │   ├── resnet101-bsize_model_400.pth
-  │   └──...
   ├── utils
   ├── check_result.py
+  ├── data_process.py
   ├── medo.py
   ├── medo_wide.py
   ├── test.py
@@ -136,12 +129,25 @@ mkdir pretrained_model
 :clap: Train Now!
 --------
 
+In this competition, I use 4-fold to train and ues the Resnet152 for the backbone.
+
 ```
-cd tools
-python train_net_step.py
+python train.py --config_file ./configs/tiger_b_resnet152_34.yml --index_flod 0
 ```
 
-Eventually the trained model will be saved in `{repo_root}/tools/Outputs/`
+```
+python train.py --config_file ./configs/tiger_b_resnet152_34.yml --index_flod 1
+```
+
+```
+python train.py --config_file ./configs/tiger_b_resnet152_34.yml --index_flod 2
+```
+
+```
+python train.py --config_file ./configs/tiger_b_resnet152_34.yml --index_flod 3
+```
+
+Eventually the trained model will be saved in `{repo_root}/tiger_out/b_resnet152_34/`
 
 
 -------
