@@ -152,11 +152,11 @@ Eventually the trained model will be saved in `{repo_root}/tiger_out/b_resnet152
 
 -------
 
-### Inference
+## :running: Inference
 
-#### Data Preparation
+### :one: Data Preparation
 
-Creat a new folder named `/reid_test/` under the `{repo_root}/data/AmurTiger/`:
+:small_orange_diamond: Creat a new folder named `/reid_test/` under the `{repo_root}/data/AmurTiger/`:
 
 ```
 cd data
@@ -164,9 +164,9 @@ cd AmurTiger
 mkdir reid_test
 ```
 
-Put the test images in the `{repo_root}/data/AmurTiger/reid_test/`.
+:small_orange_diamond: Put the test images in the `{repo_root}/data/AmurTiger/reid_test/`.
 
-#### Download Pretrained Model
+### :two: Download Pretrained Model
 
 The trained weights are following:
 
@@ -219,7 +219,8 @@ Unzip the model.zip(there will be 8 trained weights) and put them in the `{repo_
       
   ```
   
-#### Inference Now!
+:clap: Inference Now!
+--------
 
 ```
 python demo.py
@@ -231,25 +232,26 @@ It will generate a submission in the {repo_root/}:
 
 - **submission_plain.json** —-you can submit to the Tiger Plain Re-ID track.
 
+------------------------------------------------
 
+:point_right: Section2  The Tiger Wild Re-ID
+--------
 
-## Section2  The Tiger Wild Re-ID:
+## :running: Train
 
-### Train
+Same thing up here
 
-TO DO...
-
-### Inference
+## :running: Inference
 
 **In this task, it's a two-step process: Detection and Re-id**
 
-#### Detection
+### :one: Detection
 
-Please follow this repo: [CWCV2019-Amur-Tiger-Detection](https://github.com/LcenArthas/CWCV2019-Amur-Tiger-Detection)
+:small_orange_diamond: Please follow this repo: [CWCV2019-Amur-Tiger-Detection](https://github.com/LcenArthas/CWCV2019-Amur-Tiger-Detection)
 
 Note that the two repos depend on different environments(Re-ID is pytorch==1.0.1, Detection is pytorch==0.4.1)
 
-Run scrip in above repo will generate 3 files in the {repo_root/}:
+:small_orange_diamond: Run scrip in above repo will generate 3 files in the {repo_root/}:
 
 - **det_submission.json** 
 
@@ -259,15 +261,15 @@ Run scrip in above repo will generate 3 files in the {repo_root/}:
 
 This **wide_box.json** and **reid_test(a folder)** are what we need next.
 
-#### Re-ID
+### :two: Re-ID
 
 Use this reop.
 
-##### Data Preparation
+#### 1.Data Preparation
 
 Put **wide_box.json** and **reid_test(a folder)**(created by the detector above) under the `{repo_root}/data/AmurTiger/`.
 
-##### Download Pretrained Model(Same as the plain re-id)
+##### 2.Download Pretrained Model(Same as the plain re-id)
 
 The trained weight is following:
 
@@ -322,7 +324,8 @@ Unzip the model.zip and put them into the `{repo_root}/trained_weight/`.
       
   ```
   
-##### Inference Now!
+:clap: Inference Now!
+--------
 
 ```
 python demo_wide.py
