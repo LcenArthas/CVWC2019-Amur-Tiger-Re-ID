@@ -5,7 +5,7 @@ CVWC2019-Amur-Tiger-Re-ID
 
 <img src="show.jpg" width="900px"/>
 
-<p> Example result of Rank-10 .</p>
+<p> Example result of Rank-7 .</p>
 
 </div>
 
