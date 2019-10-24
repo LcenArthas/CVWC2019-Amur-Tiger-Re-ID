@@ -11,6 +11,8 @@ CVWC2019-Amur-Tiger-Re-ID
 
 :trophy:Code for 1st Place Soluition in both the **Tiger Re-ID in the plain track** and **Tiger Re-ID in the wild track**[CVWC2019](https://cvwc2019.github.io/challenge.html) @ICCV19 Workshop.
 
+:bookmark:[Paper: Part-Pose Guided Amur Tiger Re-Identification](http://openaccess.thecvf.com/content_ICCVW_2019/papers/CVWC/Liu_Part-Pose_Guided_Amur_Tiger_Re-Identification_ICCVW_2019_paper.pdf)
+
 ------
 
 :running: Getting Started
